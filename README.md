@@ -1,0 +1,4 @@
+NSLocalizableURL
+================
+
+Localizable URL class
