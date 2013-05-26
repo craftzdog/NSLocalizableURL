@@ -6,7 +6,13 @@ This class allows you to have URLs localizable.
 
 # Localizable URL
 
-First, you prepare multiple files for each language, and make an URL like so:
+First, you prepare multiple files for each language and their filename are like following:
+
+ *  cat-en.png
+ *  cat-ja.png
+ *  cat-zh.png
+
+A localizable URL for those files would be:
 
     http://github.com/foo/bar/cat-{en,ja,zh}.png
 
@@ -15,12 +21,10 @@ If a user prefers Japanese language, you will get URL resolved:
 
     http://github.com/foo/bar/cat-ja.png
 
-If a user prefers other language, English will be used in this example.
-So filenames of resources you may prepare:
+If a user prefers other language that is not included in the available languages, English will be used.
+It can also use with XCode style file tree:
 
- *  cat-en.png
- *  cat-ja.png
- *  cat-zh.png
+    http://github.com/foo/{en,ja,zh}/cat.png
 
 
 # Usage
